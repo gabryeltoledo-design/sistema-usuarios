@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Usuários</title>
+    <link rel="stylesheet" href="css/usuarios.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>Sistema de Usuários</h2>
+
+<div class="menu">
+    <a href="index.html">Cadastro</a>
+    <a href="usuarios.html">Usuários</a>
+</div>
+</nav>
+
+<div class="container">
+
+    <h1>Gerenciamento de Usuários</h1>
+
+    <p class="subtitulo">Usuários cadastrados no sistema</p>
+
+    <p class="contador">
+    Total de usuários: <span id="totalUsuarios">0</span>
+    </p>
+
+    <input type="text" id="buscarUsuario" placeholder="Buscar usuário pelo nome..." onkeyup="filtrarUsuarios()">
+
+<table>
+
+    <thead>
+    <tr>
+    <th>Nome</th>
+    <th>Email</th>
+    <th>Ação</th>
+    </tr>
+    </thead>
+
+    <tbody id="listaUsuarios"></tbody>
+
+</table>
+
+    <a class="voltar" href="index.html">← Voltar para cadastro</a>
+
+</div>
+    <script src="usuarios.js"></script>
+</body>
+</html>
