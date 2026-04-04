@@ -1,169 +1,165 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: "Segoe UI", Arial, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 body{
-background: linear-gradient(135deg,#1d2671,#c33764);
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
+    background: linear-gradient(135deg,#1d2671,#c33764);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 /* CONTAINER PRINCIPAL */
 
 .container{
-background:white;
-width:420px;
-padding:35px;
-border-radius:12px;
-box-shadow:0 15px 40px rgba(0,0,0,0.2);
-text-align:center;
-margin-top:80px;
+    background:white;
+    max-width:500px;
+    width:90%;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
 }
 
 /* TITULO */
 
 h1{
-margin-bottom:5px;
-color:#333;
+    margin-bottom:5px;
+    color:#333;
+    text-align:center;
 }
 
 .subtitulo{
-color:#777;
-margin-bottom:25px;
-font-size:14px;
+    color:#777;
+    margin-bottom:25px;
+    font-size:14px;
+    text-align:center;
 }
 
-/* LISTA */
+/* CONTADOR */
 
-ul{
-list-style:none;
+.contador{
+    background:#f2f2f2;
+    padding:10px;
+    border-radius:8px;
+    margin-bottom:20px;
+    font-weight:bold;
+    color:#444;
+    text-align:center;
 }
 
-li{
-background:#f7f7f7;
-padding:12px 15px;
-margin-bottom:12px;
-border-radius:8px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-transition:0.2s;
+/* CAMPO BUSCA */
+
+#buscarUsuario{
+    width:100%;
+    padding:10px;
+    margin-bottom:20px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:14px;
+    outline:none;
 }
 
-li:hover{
-background:#ececec;
+#buscarUsuario:focus{
+    border:1px solid #1d2671;
+}
+
+/* TABELA */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+    text-align:left;
+}
+
+th{
+    background:#1d2671;
+    color:white;
+    padding:12px;
+    font-size:14px;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    font-size:14px;
+    vertical-align:middle;
+}
+
+/* Centralizar coluna Ação */
+th:last-child,
+td:last-child{
+    text-align:center;
+}
+
+/* Hover nas linhas */
+tr:hover{
+    background:#f5f5f5;
 }
 
 /* BOTÃO EXCLUIR */
 
 button{
-background:#ff4d4d;
-color:white;
-border:none;
-padding:6px 12px;
-border-radius:6px;
-cursor:pointer;
-font-size:13px;
-transition:0.2s;
+    background:#ff4d4d;
+    color:white;
+    border:none;
+    padding:6px 12px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:13px;
+    transition:0.2s;
 }
 
 button:hover{
-background:#cc0000;
+    background:#cc0000;
 }
 
 /* BOTÃO VOLTAR */
 
 .voltar{
-display:inline-block;
-margin-top:20px;
-text-decoration:none;
-color:#555;
-font-size:14px;
+    display:block;
+    margin-top:20px;
+    text-decoration:none;
+    color:#555;
+    font-size:14px;
+    text-align:center;
 }
 
 .voltar:hover{
-color:#000;
-}
-
-.contador{
-background:#f2f2f2;
-padding:10px;
-border-radius:8px;
-margin-bottom:20px;
-font-weight:bold;
-color:#444;
+    color:#000;
 }
 
 /* NAVBAR */
 
 .navbar{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-background:#111;
-color:white;
-padding:15px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    background:#111;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .navbar h2{
-font-size:18px;
+    font-size:18px;
 }
 
 .menu a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-size:14px;
-transition:0.2s;
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
+    transition:0.2s;
 }
 
 .menu a:hover{
-color:#00c3ff;
-}
-
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
-}
-
-th{
-background:#1d2671;
-color:white;
-padding:10px;
-font-size:14px;
-}
-
-td{
-padding:10px;
-border-bottom:1px solid #ddd;
-font-size:14px;
-}
-
-tr:hover{
-background:#f5f5f5;
-}
-
-#buscarUsuario{
-width:100%;
-padding:10px;
-margin-top:15px;
-margin-bottom:15px;
-border-radius:8px;
-border:1px solid #ccc;
-font-size:14px;
-outline:none;
-}
-
-#buscarUsuario:focus{
-border:1px solid #1d2671;
+    color:#00c3ff;
 }
