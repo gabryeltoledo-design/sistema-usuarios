@@ -31,4 +31,4 @@ Projeto acadêmico desenvolvido para fins educacionais.
 
 ## 📸 Preview
 
-![Preview do Sistema](img/preview.png)
+![Preview do Sistema](frontend/img/preview.png)
